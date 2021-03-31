@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inspiration</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <audio autoplay>
+        <source id="my_audio" src="assets/DNAREMIX.mp3" type="audio/mpeg">
+      </audio>
+    
+    <div class="content">
+        <div class="slider">
+            <div   class="quote-container">
+                <div class="portrait-octogan">
+                    <div data-tilt data-tilt-reset="false" data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="image">
+                        <img src="assets/muhammad-ali.jpeg" alt="" class="ali">
+                    </div>
+                    
+                    <div class="quote1">
+                        <p>Impossible is just a big word thrown around by small men who find it easier to live in the world they’ve been given than to explore the power they have to change it. Impossible is not a fact. It’s an opinion. Impossible is not a declaration. It’s a dare. Impossible is potential. Impossible is temporary. Impossible is nothing.</p>
+                        <cite>
+                            <span>Mohammed Ali -</span>
+                          
+                        </cite>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div>
+        <div class="container2">
+            <div class="image2">
+                <div data-tilt data-tilt-startX="10" data-tilt-startY="-10" data-tilt data-tilt-reset="false" data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="theimage">
+                    <img src="assets/izzy.jpg" alt="" sizes="" srcset="">
+                </div>
+                
+                <div class="quote2">
+                    <p>I don't throw hope. I aim and fire. Down the barrel. Put it all on the line. Speak your truth. Talk your stuff and back it up, every single damn time!!</p>
+                    <cite>
+                        <h2>Isreal Adesanya -</h2>
+                    </cite>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container3">
+            <div class="image3">
+                <div data-tilt data-tilt-startX="10" data-tilt-startY="-10" data-tilt data-tilt-reset="false" data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="theimage3">
+                    <img src="assets/KENDRICK.jpeg" alt="" sizes="" srcset="">
+                </div>
+                
+                <div class="quote3">
+                    <p>If I speak the good into existence, that instant my dreams will unlock, money flow like water, I’ll just wait at the dock.</p>
+                    <cite>
+                        <h2>Kendrick Lamar -</h2>
+                    </cite>
+                </div>
+            </div>
+        </div>
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+
+    </div>
+    <div class="wavebox">
+        <div class="whitebox">
+            <img src="assets/whitebg.jpeg" alt="">
+        </div>
+    </div>
+    <script src="assets/vanilla-tilt.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector('.image',), {
+            max: 25,
+            speed: 100,
+            scale: 3,
+        });
+    </script>
+    <script>
+    VanillaTilt.init(document.querySelector('.theimage',), {
+            max: 25,
+            speed: 100,
+            scale: 1,
+        });
+    </script>
+
+
+    
+</body>
+
+</html>

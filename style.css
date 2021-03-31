@@ -1,0 +1,382 @@
+/*first quote, gradient background, and slider*/
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(130deg, #07d9a3, #048fee);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin: auto;
+    margin-top: 200px;
+    padding: 50px;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+.quote1 {
+    text-indent: 40px;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 5% 0%;
+      }
+      50% {
+        background-position: 96% 100%;
+      }
+      100% {
+        background-position: 5% 0%;
+      }
+}
+
+@keyframes gradient {
+0% {
+    background-position: 5% 0%;
+    }
+    50% {
+    background-position: 96% 100%;
+    }
+    100% {
+    background-position: 5% 0%;
+    }
+}
+
+.quote-container {
+    min-height: 200px;
+    color: #666666;
+    font-size: 36px;
+    margin: 0 10px;
+    position: bottom;
+    
+}
+
+.quote-container:hover {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.quote-container .portrait {
+    position: relative;
+    top: 0;
+    bottom: 100px;
+    margin: auto;
+    height: 100px;
+    overflow: hidden;
+}
+
+.quote-container img {
+    display: block;
+    height: auto;
+    width: 80%;
+    border-radius: 12%;
+
+    
+}
+.quote-container img {
+    width: auto;
+    height: 300px;
+}
+
+.quote-container .quote1 {
+    position: relative;
+    z-index: 600;
+    padding: 40px 0 40px 180px;
+    margin: 0;
+    font-size: 35px;
+    font-style: italic;
+    line-height: 1.4 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    
+}
+
+p {
+    font-style: italic;
+}
+
+.quote-container .quote1 p:first-child:before {
+    content: '\201C';
+    color: rgba(255, 255, 255, 0.44);
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: 1;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;
+    text-shadow: none;
+    z-index: -10;
+  }
+
+  .quote-container .quote1 cite {
+    display: block;
+    font-size: 14px;
+  }
+
+  .quote-container .quote1 cite span {
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+/*The waves that are from youtube tuts that probably dont work*/
+.waves {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 100px;
+
+
+}
+
+.parallax > use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width : 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    .content {
+        height: 30vh;
+    }
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+
+
+
+
+/*the 2nd quote*/
+.container2 img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-bottom: 10px;
+}
+
+.container2 p {
+    position: relative;
+    z-index: 600;
+    padding: 40px 0 40px 180px;
+    margin: auto;
+    margin-left: px;
+    color: #666666;
+    font-size: 35px;
+    font-style: italic;
+    line-height: 1.4 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-indent: 40px;
+    min-height: 200px;
+    padding-right: 50px;
+}
+.container2 h2 {
+    color: #666666;
+    margin-left: 800px;
+    font-family: serif;
+    display: block;
+    font-size: 23px;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 0%;
+    padding-left: 35%;
+    padding-bottom: 10%;
+}
+
+.container2 {
+    margin: auto;
+    margin-top: 200px;
+    padding: 50px;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+.image2 {
+    min-height: 200px;
+    color: #666666;
+    font-size: 36px;
+    margin: 0 10px;
+    position: center;
+}
+
+.image2 .quote2 p:first-child:before {
+    content: '\201C';
+    color: rgba(255, 255, 255, 0.44);
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: 1;
+    position: absolute;
+    top: -.4em;
+    left: -.2em;
+    text-shadow: none;
+    z-index: -10;
+}
+
+.image2:hover {
+    cursor: -webkit-grab;
+    cursor: grab;
+
+}
+
+/*the 3rd quote*/
+
+.container3 {
+    margin: auto;
+    position: relative;
+    margin-top: 0px;
+    padding: 50px;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+    align-content: flex-start;
+    margin-bottom: -800px;
+    padding-bottom: -50px;
+}
+
+.image3 {
+    min-height: 200px;
+    color: #666666;
+    font-size: 36px;
+    margin: 0 10px;
+    position: center;
+}
+
+.container3 p {
+    position: relative;
+    z-index: 600;
+    padding: 40px 0 40px 100px;
+    margin: auto;
+    margin-left: px;
+    color: #666666;
+    font-size: 35px;
+    font-style: italic;
+    line-height: 1.4 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-indent: 40px;
+    min-height: 200px;
+    padding-right: 50px;
+}
+
+.container3 img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-bottom: -10px;
+}
+
+.container3 h2 {
+    color: #666666;
+    position: relative;
+    margin-left: 800px;
+    font-family: serif;
+    display: block;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0%;
+    padding-left: 35%;
+    padding-bottom: 800px;
+}
+
+.image3 .quote3 p:first-child:before {
+    content: '\201E';
+    color: rgba(255, 255, 255, 0.44);
+    font-size: 7.5em;
+    font-weight: 700;
+    opacity: 1;
+    position: absolute;
+    bottom: -.005em;
+    right: .001em;
+    text-shadow: none;
+    z-index: -10;
+}
+
+.image3:hover {
+    cursor: -webkit-grab;
+    cursor: grab;
+
+}
+
+.container .quote3 {
+    position: relative;
+    z-index: 600;
+    padding: 40px 0 40px 180px;
+    margin: auto;
+    margin-bottom: -50px;
+    font-size: 35px;
+    font-style: italic;
+    line-height: 1.4 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    
+}
+.wavebox img {
+
+    display: flex;
+}
